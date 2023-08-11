@@ -1,0 +1,4 @@
+name = "RPCholesky"
+uuid = "72641a9e-0ae7-4379-851f-e6d22edf0786"
+authors = ["Gideon Simpson <gideon.simpson@gmail.com>"]
+version = "0.1.0"
