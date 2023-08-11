@@ -4,5 +4,5 @@ using LinearAlgebra
 using Distributions
 
 include("factorization.jl")
-export rp_cholesky
+export rpcholesky
 end # module RPCholesky

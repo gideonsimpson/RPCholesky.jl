@@ -1,10 +1,10 @@
 
 """
-    rp_cholesky(A, k; τ = 1e-8, verbose = false)
+    rpcholesky(A, k; τ = 1e-8, verbose = false)
 
-Perform the RP Cholesky factorization for matrix A of rank at most `k`.
+Perform the RPCholesky factorization for matrix A of rank at most `k`.
 """
-function rp_cholesky(A, k; τ = 1e-8, verbose = false)
+function rpcholesky(A, k; τ = 1e-8, verbose = false)
     N, _ = size(A);
     F = zeros(N,k);
     S = Int[];
