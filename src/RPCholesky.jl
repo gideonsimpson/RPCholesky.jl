@@ -1,5 +1,8 @@
 module RPCholesky
 
-greet() = print("Hello World!")
+using LinearAlgebra
+using Distributions
 
+include("factorization.jl")
+export rp_cholesky
 end # module RPCholesky
