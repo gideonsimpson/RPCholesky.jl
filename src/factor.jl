@@ -2,7 +2,8 @@
 """
     rpcholesky(A, k; τ = 1e-8, verbose = false)
 
-Perform the RPCholesky factorization for matrix A of rank at most `k`.
+Perform the RPCholesky factorization for matrix `A` of rank at most `k`.  This
+corresponds to Algorithm 2.1 of Chen et al.
 """
 function rpcholesky(A, k; τ = 1e-8, verbose = false)
     N, _ = size(A);
