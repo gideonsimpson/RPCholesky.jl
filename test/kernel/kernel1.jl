@@ -1,3 +1,4 @@
+using Random
 
 f(x) = x * sin(x); # function to regress
 
@@ -14,7 +15,7 @@ A = [K(x_,y_) for x_ in x_pts, y_ in x_pts];
 
 # rank k RPCholesky approximation
 k = 20; 
-
+Random.seed!(100)
 β_rpc, S_rpc = ridge_rpcholesky(A, y_pts,k , λ, τ=1e-12);
 f_rpc(x) = β_rpc ⋅ K.(x_pts[S_rpc],x);
 
