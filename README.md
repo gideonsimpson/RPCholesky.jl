@@ -1,18 +1,25 @@
 # RPCholesky.jl
 Randomly Pivoted Cholesky algorithm, implemented in Julia, based on the description in https://arxiv.org/abs/2207.06503 by Chen et al. 
+
+## Getting RPCholesky.jl
+This package has been added to General Registry.  You can install it with the command:
+```
+(@v1.9) pkg> add RPCholesky
+``` 
+
 ## Usage
 Given a spd matrix `A`, the rank `k` random Cholesky factorization can be obtained with
 ```
-> using RPCholesky
-> F, S = rpcholesky(A, k);
+julia> using RPCholesky
+julia> F, S = rpcholesky(A, k);
 ```
 where `F*F'≈A` and `S` is the array of randomly selected pivots.
 
 For solving the Kernel ridge regression problem with $N\times N$ kernel matrix $A = (K(x_i, x_j))$,
 $(A + \lambda N I)\beta = y$,  RPCholesky can be used to solve a smaller rank `k` linear system:
 ```
-> β, S = ridge_rpcholesky(A, y, k, λ);
-> f_apx(x_) = β ⋅ K.(x[S],x_);
+julia> β, S = ridge_rpcholesky(A, y, k, λ);
+julia> f_apx(x_) = β ⋅ K.(x[S],x_);
 ```
 ## TO DO
 * Implement blocked RPCholesky
