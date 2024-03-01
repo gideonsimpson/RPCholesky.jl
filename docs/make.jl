@@ -6,7 +6,8 @@ makedocs(checkdocs=:none,
     modules=[RPCholesky],
     pages=[
         "Home" => "index.md",
-        "Factorization" =>"rpc1.md"
+        "Factorization" =>"rpc1.md",
+        "Kernel Ridge Regression" =>"krr1.md"
     ])
 deploydocs(;
     repo="github.com/gideonsimpson/RPCholesky.jl",
