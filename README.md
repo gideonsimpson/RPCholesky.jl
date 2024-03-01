@@ -1,5 +1,8 @@
 # RPCholesky.jl
-Randomly Pivoted Cholesky algorithm, implemented in Julia, based on the description in https://arxiv.org/abs/2207.06503 by Chen et al. 
+[![](https://img.shields.io/badge/docs-dev-blue.svg)](https://gideonsimpson.github.io/RPCholesky.jl/dev)
+
+Randomly Pivoted Cholesky algorithm, implemented in Julia, based on the
+description in https://arxiv.org/abs/2207.06503 by Chen et al. 
 
 ## Getting RPCholesky.jl
 This package has been added to General Registry.  You can install it with the command:
