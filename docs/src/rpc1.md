@@ -5,4 +5,3 @@ Given a spd matrix `A`, the rank `k` random Cholesky factorization can be obtain
     rpcholesky
 ```
 Its usage is illustrated in the following simple example, which returns teh factorization ``A\approx FF'``
-

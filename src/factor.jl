@@ -4,6 +4,14 @@
 
 Perform the RPCholesky factorization for matrix `A` of rank at most `k`.  This
 corresponds to Algorithm 2.1 of Chen et al.
+
+This returns the factorization `F`, along with the array of pivots, `S`.
+
+### Fields
+* `A` - an spd matrix
+* `k` - maximum desired rank
+* `τ = 1e-8` - approximation tolerance
+* `verbose = false` - provide diagnostic details
 """
 function rpcholesky(A, k; τ = 1e-8, verbose = false)
     N, _ = size(A);
