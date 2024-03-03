@@ -17,8 +17,8 @@ K(x,y) = exp(-(x-y)^2 / (2*h^2))
 N = 10; # number of points
 x_pts = LinRange(0,1,N);
 
+# consruct kernel matrix
 A = [K(x_, y_) for x_ in x_pts, y_ in x_pts];
-@show A;
 
 Random.seed!(100); # set seed for reproducibility
 # factor
@@ -26,5 +26,6 @@ k = 5;
 F, S = rpcholesky(A, 5);
 
 # check error
-@show opnorm(A - F*F');
+@show opnorm(A - F*F'); # spectral norm
+@show norm(A - F*F');   # Frobenius norm
 ```
