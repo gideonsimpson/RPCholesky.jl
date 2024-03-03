@@ -1,5 +1,5 @@
 # RPCholesky.jl
-[![](https://img.shields.io/badge/docs-dev-blue.svg)](https://gideonsimpson.github.io/RPCholesky.jl/dev)
+[![](https://img.shields.io/badge/docs-stable-blue.svg)](https://gideonsimpson.github.io/RPCholesky.jl/stable)
 
 Randomly Pivoted Cholesky algorithm, implemented in Julia, based on the
 description in <https://arxiv.org/abs/2207.06503> by Chen et al. 
