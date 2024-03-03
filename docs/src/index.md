@@ -1,6 +1,6 @@
 # RPCholesky.jl Documentation
 Randomly Pivoted Cholesky algorithm, implemented in Julia, based on the
-description in https://arxiv.org/abs/2207.06503 by Chen et al. 
+description in <https://arxiv.org/abs/2207.06503> by Chen et al. 
 
 ## Acknowledgements
 This package has been developed in conjunction with R.J. Webber and D. Aristoff.
