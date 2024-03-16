@@ -26,6 +26,6 @@ k = 5;
 F, S = rpcholesky(A, 5);
 
 # check error
-@show opnorm(A - F*F'); # spectral norm
-@show norm(A - F*F');   # Frobenius norm
+println(opnorm(A - F*F')); # spectral norm
+println(norm(A - F*F'));   # Frobenius norm
 ```

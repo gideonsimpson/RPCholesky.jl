@@ -31,3 +31,6 @@ Manifest.toml
 
 # notebook checkpoints
 **/.ipynb_checkpoints/*
+
+## scratch folder
+scratch/*
