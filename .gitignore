@@ -34,3 +34,7 @@ Manifest.toml
 
 ## scratch folder
 scratch/*
+# data files
+*.npz
+*.mat
+*.jld2

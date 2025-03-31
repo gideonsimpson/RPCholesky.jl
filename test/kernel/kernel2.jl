@@ -9,9 +9,10 @@ A = [K(x_,y_) for x_ in x_pts, y_ in x_pts];
 
 # rank k RPCholesky approximation
 r = 20; 
+b = 5;
 
-β_rpc, S_rpc = rpc_krr(A, y_pts, r, λ, tol=1e-12);
-f1_rpc(x) = β_rpc ⋅ K.(x_pts[S_rpc],x);
+β_rpc, S_rpc = rpc_krr(A, y_pts, r, b, λ, tol=1e-12);
+f2_rpc(x) = β_rpc ⋅ K.(x_pts[S_rpc],x);
 
 # check error
-norm(f1_rpc.(x_pts) - y_pts, Inf)< 1e-2
+norm(f2_rpc.(x_pts) - y_pts, Inf)< 1e-2
