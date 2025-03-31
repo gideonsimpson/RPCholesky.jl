@@ -4,8 +4,8 @@ using LinearAlgebra
 using Distributions
 
 include("factor.jl")
-export rpcholesky
+export rpc
 include("ridge.jl")
-export ridge_rpcholesky
+export rpc_krr
 
 end # module RPCholesky
