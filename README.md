@@ -33,7 +33,7 @@ $$
 $$
 RPCholesky can be used to solve a smaller rank `r` linear system:
 ```
-> β, S = ridge_rpcholesky(A, y, r, λ);
+> β, S = rpc_krr(A, y, r, λ);
 > f_apx(x_) = β ⋅ K.(x[S],x_);
 ```
 Block versions of both are implemented, by passing a `b` argument after `r`:

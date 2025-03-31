@@ -4,8 +4,8 @@ using Documenter
 using DocumenterCitations
 
 bib = CitationBibliography(joinpath(@__DIR__, "src", "refs.bib"); style=:numeric)
-
-makedocs(checkdocs=:none,
+#checkdocs=:none,
+makedocs(
     sitename="RPCholesky.jl",
     modules=[RPCholesky],
     format=Documenter.HTML(
