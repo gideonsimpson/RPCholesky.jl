@@ -1,11 +1,11 @@
 # Kernel Ridge Regression
 One of the key applications of the method is to solving the ridge regressino
 problem.  This is performed with
-<!-- ```@docs 
-rpc_krr
-``` -->
+```@docs 
+RPCholesky.rpc_krr
+```
 The following example shows how this can be used in a regression problem:
-<!-- ```@example
+```@example
 using LinearAlgebra
 using RPCholesky
 using Random
@@ -35,4 +35,4 @@ plot(x_plt, f.(x_plt), label="Truth")
 plot!(x_plt, f_rpc.(x_plt),label="Approximation")
 scatter!(x_pts, y_pts, label="Data")
 xlabel!("x")
-``` -->
+```

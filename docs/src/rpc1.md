@@ -2,12 +2,12 @@
 
 Given a spd matrix `A`, the rank `k` random Cholesky factorization can be
 obtained with 
-<!-- ```@docs 
-rpc
-``` -->
+```@docs 
+RPCholesky.rpc
+```
 Its usage is illustrated in the following simple example, which returns the
 factorization ``A\approx FF'``.
-<!-- ```@example
+```@example
 using LinearAlgebra
 using RPCholesky
 using Random
@@ -30,4 +30,4 @@ F, S = rpc(A, 5);
 println(tr(A - F*F')); # trace norm
 println(opnorm(A - F*F')); # spectral norm
 println(norm(A - F*F'));   # Frobenius norm
-``` -->
+```
