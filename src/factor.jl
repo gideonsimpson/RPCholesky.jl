@@ -32,7 +32,7 @@ function rpc(A, r, b; tol = 1e-8, eps=1e-12, verbose = false)
         ns = length(s);
 
         G[:,1:length(s)] = A[:, s] - F[:,1:nS] * (F[s,1:nS]');
-        chol = cholesky(G[s,1:ns] + eps * I);
+        chol = cholesky(G[s,1:ns] + eps * max(tr(G[s,1:ns]),1) * I);
         
         GRinv = G[:,1:length(s)]/chol.U;
 

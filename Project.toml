@@ -1,7 +1,7 @@
 name = "RPCholesky"
 uuid = "72641a9e-0ae7-4379-851f-e6d22edf0786"
 authors = ["Gideon Simpson <gideon.simpson@gmail.com>"]
-version = "0.2.0"
+version = "0.2.1"
 
 [deps]
 Distributions = "31c24e10-a181-5473-b8eb-7969acd0382f"
